@@ -14,7 +14,9 @@ namespace AmazonMWS
             var accessor = new AmazonMwsDataAccessor();
 
             var result = accessor.ListMatchingAmazonProductsForQuery("brakes");
-
+            var result1 = accessor.GetCompetitivePricingForAsin(new List<string> { "B0773ZLW9J" });
+            var result2 = accessor.GetLowestOfferListingsForAsin(new List<string> { "B0773ZLW9J" });
+            var result3 = accessor.GetLowestPricedOffersForAsin("B0773ZLW9J", "new");   
             Console.Write(result);
 
 

@@ -36,5 +36,52 @@ namespace AmazonMWSAccessor
             return "Success";
         }
 
+        //GetCompetitivePricingForASIN
+        // Amazon throttle - 36000 requests per hour, quota 20 requests, restore 10 items every second
+        public string GetCompetitivePricingForAsin(List<string> asin)
+        {
+            var asinListType = new ASINListType
+            {
+                ASIN = asin
+            };
+            var request = new GetCompetitivePricingForASINRequest(SELLERID, MARKETPLACEID, asinListType);
+
+            var response = _productClient.GetCompetitivePricingForASIN(request);
+
+            var result = response.GetCompetitivePricingForASINResult.First();
+
+            return "Success";
+        }
+        //GetLowerstOfferListingsForASIN
+        // Amazon throttle - 36000 requests per hour, quota 20 requests, restore 10 items every second
+        public string GetLowestOfferListingsForAsin(List<string> asin)
+        {
+            var asinListType = new ASINListType
+            {
+                ASIN = asin
+            };
+            var request = new GetLowestOfferListingsForASINRequest(SELLERID, MARKETPLACEID, asinListType);
+
+            var response = _productClient.GetLowestOfferListingsForASIN(request);
+
+            var result = response.GetLowestOfferListingsForASINResult.First();
+
+            return "Success";
+        }
+
+        //GetLowestPricedOffersForAsin
+        // Amazon throttle - 200 requests per hour, quota 10 requests, restore 5 items every second
+        public string GetLowestPricedOffersForAsin(string asin, string itemCondition)
+        {
+
+            var request = new GetLowestPricedOffersForASINRequest(SELLERID, MARKETPLACEID, asin, itemCondition);
+
+            var response = _productClient.GetLowestPricedOffersForASIN(request);
+
+            var result = response.GetLowestPricedOffersForASINResult;
+
+            return "Success";
+        }
+
     }
 }
