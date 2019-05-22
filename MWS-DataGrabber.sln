@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MWS-DataGrabber", "MWS-DataGrabber\MWS-DataGrabber.csproj", "{D452CC87-DBE1-473C-9F22-31F1F8C9658D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonMWS", "AmazonMWS\AmazonMWS.csproj", "{5EF95952-5E64-4C84-AF11-27BD1B67C5F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D452CC87-DBE1-473C-9F22-31F1F8C9658D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D452CC87-DBE1-473C-9F22-31F1F8C9658D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D452CC87-DBE1-473C-9F22-31F1F8C9658D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D452CC87-DBE1-473C-9F22-31F1F8C9658D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF95952-5E64-4C84-AF11-27BD1B67C5F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF95952-5E64-4C84-AF11-27BD1B67C5F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF95952-5E64-4C84-AF11-27BD1B67C5F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF95952-5E64-4C84-AF11-27BD1B67C5F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21CDE969-74CC-4734-895E-20AE98AAC955}
+	EndGlobalSection
+EndGlobal
